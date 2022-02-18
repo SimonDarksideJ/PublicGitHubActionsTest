@@ -19,6 +19,6 @@ jobs:
     - uses: actions/checkout@v2
       name: Checkout
 
-    - uses: .github/workflows/workflow-B.yml
+    - uses: ./.github/workflows/workflow-B.yml
       with:
         username: mona

@@ -13,12 +13,6 @@ on:
 
 jobs:
   call-workflow-2-in-local-repo:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-      name: Checkout
-
-    - uses: ./.github/workflows/workflow-B.yml
-      with:
-        username: mona
+    uses: ./.github/workflows/workflow-B.yml                                           
+    with:
+      username: mona

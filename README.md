@@ -21,11 +21,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Markdown
 
 {% for post in site.posts %}
+  <article>
     <h2>
-      <a href="{{ site.url }}{{ post.url }}">
-        {{ post.title }}
-      </a>
+        <a href="{{ site.url }}{{ post.url }}">
+            {{ post.title }}
+        </a>
     </h2>
+  </article>
 {% endfor %}
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

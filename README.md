@@ -4,6 +4,13 @@ You can use the [editor on GitHub](https://github.com/SimonDarksideJ/PublicGitHu
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### My Posts
+
+{% for post in site.posts %}	
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="https://simondarksidej.github.io/PublicGitHubActionsTest/{{ post.url }}"></a></small></p>	
+{% endfor %}
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

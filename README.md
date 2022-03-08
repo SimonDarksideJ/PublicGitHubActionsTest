@@ -6,9 +6,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### My Posts
 
-{% for post in site.posts %}	
+{% for post in site.posts %}
+
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="https://simondarksidej.github.io/PublicGitHubActionsTest/{{ post.url }}"></a></small></p>	
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="{{site.url}}{{ post.url }}"></a></small></p>	
+
+    [{{ post.title }}]({{site.url}}{{ post.url }})
 {% endfor %}
 
 ### Markdown
